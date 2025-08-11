@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Beaufort for LOL', serif;
+}
+header{
+    display: flex;
+    background-color: rgb(18, 18, 18);
+}
+header figure img{
+    max-width: 100px;
+    padding: 1.5em 2em 1.5em 2em;
+}
+figure{
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+}
+
+nav ul li{
+    position: relative;
+    padding: 3em 1.5em 1em 1.5em;
+    color: white;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: #d2ad48;
+}
+/*--------------------------------------------------------*/
+.submenu{
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(41, 41, 41);
+    z-index: 1000;
+    gap: 8px;
+    display: block;
+}
+.submenu a{
+    display: block;
+    padding: 10px 32px;
+    color: white;
+    text-align: center;
+}
+.submenu a:hover{
+    background-color: rgb(18, 18, 18);
+    color: #d2ad48;
+}
+.menu:hover .submenu{
+    visibility: inherit;
+}
+/*--------------------------------------------------------*/
+main{
+    background-color: rgb(18, 18, 18);
+}
+
+main figure img{
+    max-width: 1477px;
+    justify-content: center;
+}
+main h1{
+    /*Usar position absolute ou relative para colocar texto em cima da imagem*/
+    position: relative;
+    top: -235px;
+    text-align: center;
+    font-size: 90px;
+    color: #d2ad48;
+}
+form{
+    text-align: left;
+    justify-content: center;
+    border-radius: 1.5em;
+    margin: 1em 47em 1em 39em;
+    padding: 2em 7em 5em 2em;
+    background-color: white;
+    position: absolute;
+    top: 10em;
+    min-height: 20em;
+    width: 10em; 
+
+}
+input{
+    padding: 0.5em 0em 0.5em 0em;
+    max-width: 10em;
+}
+
+.enviar{
+    font-size: 1em;
+    padding: 0.5em 2em 0.5em 2em;
+    margin-top: 0.5em;
+    border-radius: 0.25em ;
+}
+.enviar:hover{
+    color: white;
+    background-color: #d2ad48;
+}
+
+/*--------------------------------------------------------*/
+footer{
+    background-color: rgb(18, 18, 18);
+}
+footer p{
+    padding: 3em;
+    color: white;
+    text-align: center;
+}
